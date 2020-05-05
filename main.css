@@ -1,0 +1,90 @@
+/* designing mobile first  */
+:root {
+  --section-border: 1em;
+  --font-xl:18vmin;
+  --font-l:10vmin;
+  --font-m:6vmin;
+  --font-s:4vmin;
+  --font-xs:2.5vmin;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Raleway, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+section {
+  height: calc(100vh - var(--section-border) * 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--section-border) solid black;
+  border-bottom-width: var(--section-border) / 2;
+}
+.content{
+  padding:1em;
+}
+.end-section{
+  border-bottom-width: var(--section-border);
+}
+h1 {
+  font-weight: 600;
+  padding-bottom: 0.5em;
+  font-size: var(--font-xl);
+}
+h2 {
+  font-weight: 200;
+  padding-bottom: 0.5em;
+  font-size: var(--font-xl);
+}
+h3 {
+  font-weight: 200;
+  padding-bottom: 0.5em;
+  font-size: var(--font-m);
+}
+ul.social-icons li {
+  display: inline;
+  padding-left: 2px;
+}
+ul.social-icons li a {
+  text-decoration: none;
+  color: black;
+}
+ul.main-tagline{
+  padding-bottom: 1em;
+}
+ul.main-tagline li{
+  display: inline;
+  padding-left: 2px;
+  font-size: var(--font-m);
+}
+ul.main-tagline li::after{
+  content: " || ";
+}
+ul.main-tagline li:last-child::after{
+  content: "";
+}
+span.highlight,
+a.link {
+  background-image: linear-gradient(
+    transparent 0% 50%,
+    rgba(255, 255, 255, 0.35) 50%
+  );
+  background-size: 100% 100%;
+  word-break: break-word;
+  background-position: 0px 0px;
+}
+a.link{
+  font-size: var(--font-xs);
+}
+a.link:hover {
+  background-image: linear-gradient(
+    transparent 0% 0,
+    rgba(255, 255, 255, 0.35) 0
+  );
+  background-position: 0px 100%;
+}
