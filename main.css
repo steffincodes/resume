@@ -1,11 +1,11 @@
 /* designing mobile first  */
 :root {
   --section-border: 1em;
-  --font-xl:18vmin;
-  --font-l:10vmin;
-  --font-m:6vmin;
-  --font-s:4vmin;
-  --font-xs:2.5vmin;
+  --font-xl: 18vmin;
+  --font-l: 10vmin;
+  --font-m: 6vmin;
+  --font-s: 4vmin;
+  --font-xs: 2.5vmin;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -27,10 +27,10 @@ section {
   border: var(--section-border) solid black;
   border-bottom-width: var(--section-border) / 2;
 }
-.content{
-  padding:1em;
+.content {
+  padding: 1em;
 }
-.end-section{
+.end-section {
   border-bottom-width: var(--section-border);
 }
 h1 {
@@ -40,13 +40,18 @@ h1 {
 }
 h2 {
   font-weight: 200;
-  padding-bottom: 0.5em;
+  /* padding-bottom: 0.5em; */
   font-size: var(--font-l);
+  text-align: center;
 }
 h3 {
   font-weight: 200;
   padding-bottom: 0.5em;
   font-size: var(--font-m);
+  text-align: center;
+}
+p {
+  text-align: center;
 }
 ul.social-icons li {
   display: inline-block;
@@ -56,18 +61,18 @@ ul.social-icons li a {
   text-decoration: none;
   color: black;
 }
-ul.main-tagline{
+ul.main-tagline {
   padding-bottom: 1em;
 }
-ul.main-tagline li{
+ul.main-tagline li {
   display: inline-block;
   padding-left: 2px;
   font-size: var(--font-m);
 }
-ul.main-tagline li::after{
+ul.main-tagline li::after {
   content: " || ";
 }
-ul.main-tagline li:last-child::after{
+ul.main-tagline li:last-child::after {
   content: "";
 }
 span.highlight,
@@ -80,7 +85,7 @@ a.link {
   word-break: break-word;
   background-position: 0px 0px;
 }
-a.link{
+a.link {
   font-size: var(--font-xs);
 }
 a.link:hover {
@@ -89,4 +94,34 @@ a.link:hover {
     rgba(255, 255, 255, 0.35) 0
   );
   background-position: 0px 100%;
+}
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.scrollx-content {
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  height: calc(100vh - var(--section-border) * 2);
+  width: calc(100vw - var(--section-border) * 2);
+}
+.scrollx-content::before {
+  content: "👈🏼";
+  font-size: var(--font-m);
+}
+.scrollx-content:first-child::before {
+  content: "";
+}
+.scrollx-content:last-child::after {
+  content: "";
+}
+.scrollx-content::after {
+  content: "👉🏼";
+  font-size: var(--font-m);
 }
