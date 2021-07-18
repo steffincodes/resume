@@ -1,15 +1,15 @@
 # Steffin
 ## Junior Developer & Code Enthusiast
 
-> :art: [codepen@steffin-codes](https://codepen.io/steffin-codes)
+> :art: [codepen@steffincodes](https://codepen.io/steffincodes)
 
-> :beers: [github@steffin-codes](https://github.com/steffin-codes)
+> :beers: [github@steffincodes](https://github.com/steffincodes)
 
-> :pencil: [twitter@steffin_codes](https://twitter.com/steffin_codes)
+> :pencil: [twitter@steffincodes](https://twitter.com/steffincodes)
 
-> :sparkles: [instagram@steffin_codes](https://www.instagram.com/steffin_codes/)
+> :sparkles: [instagram@steffincodes](https://www.instagram.com/steffincodes/)
 
-> :speech_balloon: [steffin-codes@gmail.com](mailto:steffin-codes@gmail.com)
+> :speech_balloon: [steffin.codes@gmail.com](mailto:steffin.codes@gmail.com)
 
 ------
 
